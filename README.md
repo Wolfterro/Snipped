@@ -3,18 +3,18 @@
 
 ## Description:
 
-#### This is a simple program written in Python that can be used as a basic snippet client for [glot.io](https://glot.io).
-#### You can use it to post, download, delete and update snippets from glot.io, serving as a good CLI client.
+##### This is a simple program written in Python that can be used as a basic snippet client for [glot.io](https://glot.io).
+##### You can use it to post, download, delete and update snippets from glot.io, serving as a good CLI client.
 
-#### To delete or update snippets, you'll be required to input your [Authorization Token (API Token)](https://glot.io/account/token) when prompted, or put it on the AUTH_TOKEN variable on the source code, in case you don't want to show it on the terminal or don't want to type it everytime.
+##### To delete or update snippets, you'll be required to input your [Authorization Token (API Token)](https://glot.io/account/token) when prompted, or put it on the AUTH_TOKEN variable on the source code, in case you don't want to show it on the terminal or don't want to type it everytime.
 
-#### To post a snippet, the Authorization Token is optional. Not using it means you'll post it anonymously. 
+##### To post a snippet, the Authorization Token is optional. Not using it means you'll post it anonymously. 
 
-#### The program will ask for the programming language of the snippet, a name for the snippet, the optional Token in case you want to save it on your account (this prompt will not appear if you insert your Token in the AUTH_TOKEN variable) and the availability of the snippet (public or secret). These same steps will happen when updating a snippet and the program will ask for the URL of the snippet to be updated.
+##### The program will ask for the programming language of the snippet, a name for the snippet, the optional Token in case you want to save it on your account (this prompt will not appear if you insert your Token in the AUTH_TOKEN variable) and the availability of the snippet (public or secret). These same steps will happen when updating a snippet and the program will ask for the URL of the snippet to be updated.
 
-#### Downloading snippets doesn't require the Token. It will ask for the URL of the snippet and will create a directory for it, inside the 'Codes' directory (the program will create one if it doesn't exists).
+##### Downloading snippets doesn't require the Token. It will ask for the URL of the snippet and will create a directory for it, inside the 'Codes' directory (the program will create one if it doesn't exists).
 
-#### When deleting snippets, you'll need the Token and the URL of the snippet to be deleted. Keep in mind that once this is done, you cannot revert it! Anonymous snippets, even the one's written or uploaded by you, cannot be deleted.
+##### When deleting snippets, you'll need the Token and the URL of the snippet to be deleted. Keep in mind that once this is done, you cannot revert it! Anonymous snippets, even the one's written or uploaded by you, cannot be deleted.
 
 ## Options:
 
@@ -57,7 +57,7 @@
 
     sudo pip install pycurl
 
-#### cURL and it's libraries normally comes preinstalled in various distros, but in case you don't have it, it's recommended to install it just in case.
+##### cURL and it's libraries normally comes preinstalled in various distros, but in case you don't have it, it's recommended to install it just in case.
 
 ## Download:
 
