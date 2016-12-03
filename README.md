@@ -61,6 +61,10 @@
 
 ##### cURL and it's libraries normally comes preinstalled in various distros, but in case you don't have it, it's recommended to install it just in case.
 
+#### Ubuntu/Debian/Linux Mint:
+
+    sudo apt-get install curl libcurl-dev
+
 ## Download:
 
 #### You can download Snipped by cloning this repo with git:
