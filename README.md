@@ -12,9 +12,11 @@
 
 ##### The program will ask for the programming language of the snippet, a name for the snippet, the optional Token in case you want to save it on your account (this prompt will not appear if you insert your Token in the AUTH_TOKEN variable) and the availability of the snippet (public or secret). These same steps will happen when updating a snippet and the program will ask for the URL of the snippet to be updated.
 
-##### Downloading snippets doesn't require the Token. It will ask for the URL of the snippet and will create a directory for it, inside the 'Codes' directory (the program will create one if it doesn't exists).
+##### Downloading snippets doesn't require the Token. It will ask for the URL of the snippet and will create a directory for it, inside the 'Snippets' directory (the program will create one if it doesn't exists) in your home directory.
 
 ##### When deleting snippets, you'll need the Token and the URL of the snippet to be deleted. Keep in mind that once this is done, you cannot revert it! Anonymous snippets, even the one's written or uploaded by you, cannot be deleted.
+
+## [Check the CHANGELOG for more informations about newer versions](https://raw.github.com/Wolfterro/Snipped/master/CHANGELOG.txt)
 
 ## Options:
 
