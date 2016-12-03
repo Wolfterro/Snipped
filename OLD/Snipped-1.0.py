@@ -27,12 +27,11 @@ SOFTWARE.
 
 #===================================
 # Created by: Wolfterro
-# Version: 1.1 - Python 2.x
-# Date: 03/12/2016 - (DD/MM/YYYY)
+# Version: 1.0 - Python 2.x
+# Date: 12/09/2016 - (DD/MM/YYYY)
 #===================================
 
 from __future__ import print_function
-from os.path import expanduser
 from StringIO import StringIO
 from urllib2 import urlparse
 from time import sleep
@@ -42,27 +41,16 @@ import sys
 import json
 import pycurl
 import urllib
-import ctypes
 import urllib2
-import platform
 
 # Version
 # =======
-VERSION = "1.1"
+VERSION = "1.0"
 
 # Defining default encoding to UTF-8
 # ==================================
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
-# Getting the user's home directory path
-# ======================================
-if platform.system() == "Windows":
-	buf = ctypes.create_unicode_buffer(1024)
-	ctypes.windll.kernel32.GetEnvironmentVariableW(u"USERPROFILE", buf, 1024)
-	home_dir = buf.value
-else:
-	home_dir = expanduser("~")
 
 # Authorization Token
 # You can fill the variable below with your Authorization Token
@@ -454,17 +442,12 @@ def getSnippetInformationToDelete(urlToDelete):
 # directories with their files
 # ====================================================
 def mainDirectory():
-	if platform.system() == "Windows":
-		snippetDir = "%s\\%s" % (home_dir, "Snippets")
+	if os.path.exists("Codes"):
+		os.chdir("Codes")
 	else:
-		snippetDir = "%s/%s" % (home_dir, "Snippets")
-
-	if os.path.exists(snippetDir):
-		os.chdir(snippetDir)
-	else:
-		print("[Snipped] Creating directory 'Snippets' ...")
-		os.makedirs(snippetDir)
-		os.chdir(snippetDir)
+		print("[Snipped] Creating directory 'Codes' ...")
+		os.makedirs("Codes")
+		os.chdir("Codes")
 
 # Checking, creating and accessing the code's directory
 # This directory will be used to store the codes from
